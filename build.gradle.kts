@@ -30,6 +30,7 @@ kotlin {
         val nativeMain by getting {
             dependencies {
                 implementation("com.squareup.okio:okio:3.0.0")
+                implementation("com.jakewharton.timber:timber:5.0.1")
             }
         }
         val nativeTest by getting

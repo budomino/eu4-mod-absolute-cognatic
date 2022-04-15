@@ -1,12 +1,10 @@
-import okio.FileSystem
+import okio.Path.Companion.toPath
 
 fun main(args: Array<String>) {
-    val directory =
-    if (args.isNotEmpty()){
-        args[0]
-    } else {
-        System.getProperty("user.dir")
-    }
-    val fileList = FileSystem(directory).list()
-    println("$fileList")
+	val directory =
+		if (args.isNotEmpty()){
+			args[0]
+		} else {
+		}
+	println(okio.FileSystem.SYSTEM.list("".toPath()))
 }
